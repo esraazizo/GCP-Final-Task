@@ -1,11 +1,11 @@
 # create svc for vm
 resource "google_service_account" "my-service-account" {
-  account_id = "my-first-svc-account"                 # gke-admin
-  display_name = "my-first-svc-account"               #k8s-admin
+  account_id = "my-first-svc-account"                 
+  display_name = "my-first-svc-account"               
 }
 resource "google_project_iam_member" "project" {
   project = "esraa-abdelaziz"
-  role   = "roles/firebase.admin"
+  role   = "roles/container.admin"
   member = "serviceAccount:${google_service_account.my-service-account.email}"
 }
 #------------------------------------------------------------------------------------------------------------
