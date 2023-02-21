@@ -59,7 +59,7 @@ Infrastructure consists of
      <img src="screenshots/vpc.png" width=400 >
  
    
-   -vm 
+   - vm 
    
    <img src="screenshots/vm.png" width=400 >
     
