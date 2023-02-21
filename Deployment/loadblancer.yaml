@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: esraa-LB
+spec:
+  type: LoadBalancer
+  selector:
+    name: my-app
+  ports:
+    - port: 80
+      targetPort: 8000
+      nodePort: 31313
+
+
