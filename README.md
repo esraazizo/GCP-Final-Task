@@ -61,7 +61,7 @@ Infrastructure consists of
    
    - vm 
    
-   <img src="screenshots/vm.png" width=400 >
+     <img src="screenshots/vm.png" width=400 >
     
     
    - cluster 
