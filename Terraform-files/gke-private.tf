@@ -60,6 +60,6 @@ resource "google_container_node_pool" "my-gke-node-pool" {
      ]
   }
 }
-// to install plugin to fetsh the cluster "sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin"
+
 
 
