@@ -31,6 +31,13 @@ Infrastructure consists of
 2- Install Terraform.
 
 3-Clone the repository from https://github.com/esraazizo/GCP-Final-Task 
+        •Run terraform init to initialize the project
+          <img src="screenshots/terraform-init.png" width=400 >
+          
+
+        •Run terraform plan to preview the changes that will be made
+        •Run terraform apply to create the resources
+
 
 4-SSH into the management private vm
 
