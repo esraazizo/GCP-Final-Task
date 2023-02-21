@@ -32,17 +32,17 @@ Infrastructure consists of
 
 3-Clone the repository from https://github.com/esraazizo/GCP-Final-Task 
        
-       •Run terraform init to initialize the project
+ -Run terraform init to initialize the project
         
-        <img src="screenshots/terraform-init.png" width=400 >
+   <img src="screenshots/terraform-init.png" width=400 >
          
-        •Run terraform plan to preview the changes that will be made.
+ -Run terraform plan to preview the changes that will be made.
         
-         <img src="screenshots/terraform-plan.png" width=400 >
+   <img src="screenshots/terraform-plan.png" width=400 >
        
-       •Run terraform apply to create the resources.
+ -Run terraform apply to create the resources.
         
-        <img src="screenshots/terraform-apply.png" width=400 >
+   <img src="screenshots/terraform-apply.png" width=400 >
 
 
 4- Infrastructure screenshots from console.
@@ -53,9 +53,9 @@ Infrastructure consists of
    
    -vm 
    
-    <img src="screenshots/vm.png" width=400 >
+   <img src="screenshots/vm.png" width=400 >
     
-   
+    
    - cluster 
       
       <img src="screenshots/console-cluster.png" width=400 >
@@ -66,34 +66,34 @@ Infrastructure consists of
   
       <img src="screenshots/2-subnet.png" width=400 >
 
-    -subnet with details 
     
-      
-     <img src="screenshots/manag-subnet-details.png" width=400 >
+      <img src="screenshots/manag-subnet-details.png" width=400 >
      
+ 
  5- Build image of python-app and push it to gcr 
    
-     docker build . -t gcr.io/<your-project-id>/my-python-app
+      -docker build . -t gcr.io/<your-project-id>/my-python-app
      
-     <img src="screenshots/build-image.png" width=400 >
+   <img src="screenshots/build-image.png" width=400 >
      
-     <img src="screenshots/push-image-gcr.png" width=400 >
+   <img src="screenshots/push-image-gcr.png" width=400 >
      
 6- Two images on gcr 
   
-     <img src="screenshots/2-images-gcr.png" width=400 >
+   <img src="screenshots/2-images-gcr.png" width=400 >
 
-7- SSH into the private mangment VM and connect to the cluster 
-  gcloud container clusters get-credentials python-cluster --zone <your-added-preferred-zone> --project <your-project-id>
+7- SSH into the private mangment VM and connect to the cluster.
+
+     gcloud container clusters get-credentials python-cluster --zone <your-added-preferred-zone> --project <your-project-id>
    
 8- Run deployment files and create pods and services 
      
-   kubectl apply -f Deployment 
+     kubectl apply -f Deployment 
     
-   -Screen of pods and services
+  -Screen of pods and services
    
-    <img src="screenshots/pods&svc.png" width=400 >
+  <img src="screenshots/pods&svc.png" width=400 >
     
 9- Accessing the Python App
    
-    <img src="screenshots/hit-lp-ip.png" width=400 >
+  <img src="screenshots/hit-lp-ip.png" width=400 >
